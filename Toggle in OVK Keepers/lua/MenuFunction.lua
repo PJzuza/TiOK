@@ -87,5 +87,5 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "OVK_KeepersOptions", function( menu
 end)
 Hooks:Add("MenuManagerBuildCustomMenus", "OVK_KeepersOptions", function(menu_manager, nodes)
 	nodes[OVK_Keepers.options_menu] = MenuHelper:BuildMenu( OVK_Keepers.options_menu )
-	MenuHelper:AddMenuItem( MenuHelper.menus.lua_mod_options_menu, OVK_Keepers.options_menu, "OVK_Keepers_menu_title", "OVK_Keepers_menu_desc")
+	MenuHelper:AddMenuItem(nodes["blt_options"],OVK_Keepers.options_menu, "OVK_Keepers_menu_title", "OVK_Keepers_menu_desc")
 end)
